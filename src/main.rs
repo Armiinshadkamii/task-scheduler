@@ -33,10 +33,7 @@ fn main() {
 
     // Producer 2
     let producer2 = thread::spawn(move || {
-        let tasks = vec![
-            "Process payment",
-            "Verify transaction",
-        ];
+        let tasks = vec!["Process payment", "Verify transaction"];
 
         for task in tasks {
             println!("Producer 2 trying to submit: {}", task);
